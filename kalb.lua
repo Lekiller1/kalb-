@@ -4,8 +4,8 @@ local RunService = game:GetService("RunService")
 local player = Players.LocalPlayer
 local PlayerGui = player:WaitForChild("PlayerGui")
 local SafeParent = (pcall(function() return gethui() end) and gethui()) or PlayerGui
-if SafeParent:FindFirstChild("Venzz hub") then
-    SafeParent.Venzz_hub:Destroy()
+if SafeParent:FindFirstChild("lekiller") then
+    SafeParent.lekiller_hub:Destroy()
 end
 local Theme = {
     Background = Color3.fromRGB(5, 5, 8),
@@ -17,7 +17,7 @@ local Theme = {
     Success = Color3.fromRGB(0, 120, 255)
 }
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "Venzz_hub"
+ScreenGui.Name = "lekiller_hub"
 ScreenGui.ResetOnSpawn = false
 ScreenGui.Parent = SafeParent
 local toggleBtn = Instance.new("ImageButton", ScreenGui)
@@ -61,7 +61,7 @@ local Title = Instance.new("TextLabel", TopBar)
 Title.Size = UDim2.new(0, 160, 0, 22)
 Title.Position = UDim2.new(0, 52, 0, 5)
 Title.BackgroundTransparency = 1
-Title.Text = "Venzz HUB"
+Title.Text = "lekiller hub"
 Title.TextColor3 = Theme.Text
 Title.TextSize = 18
 Title.Font = Enum.Font.GothamBold
