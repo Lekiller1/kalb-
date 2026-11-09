@@ -616,22 +616,16 @@ local function addLabel(txt, clr)
     l.Text = txt; l.TextColor3 = clr; l.Font = Enum.Font.GothamBold; l.TextSize = 12
 end
 addLabel("🗿 Kick a Lucky Block", Theme.Success)
-addLabel("🤬 by Venzz", Theme.Success)
-addLabel("✌ Like and follow", Theme.Success)
-addLabel("▶️ YouTube Venzz_mm2", Theme.Success)
 addLabel("🟢 It works", Theme.Success)
 addLabel("🟠 Waiting for update.", Theme.Success)
-addLabel("❌ It's not working", Theme.Success)
 local function addUpdateLabel(txt, clr)
     local l = Instance.new("TextLabel", UpdateTab)
     l.Size = UDim2.new(1, 0, 0, 25); l.BackgroundTransparency = 1
     l.Text = txt; l.TextColor3 = clr; l.Font = Enum.Font.GothamBold; l.TextSize = 12
     l.TextWrapped = true
 end
-addUpdateLabel("🌛 Version V1 beta", Theme.Success)
+addUpdateLabel("🌛 Version V1", Theme.Success)
 addUpdateLabel("💫 New kick a Lucky block script.", Theme.Success)
-addUpdateLabel("💬 script by Venzz subscribe yt me.", Theme.Success)
-addUpdateLabel("🌐 https://discord.gg/Vn2Zg7ZvV.", Theme.Success)
 Tabs[1].Page.Visible = true
 Tabs[1].Btn.BackgroundColor3 = Theme.Accent
 Tabs[1].Btn.TextColor3 = Color3.new(0,0,0)
