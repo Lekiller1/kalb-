@@ -630,3 +630,12 @@ Tabs[1].Page.Visible = true
 Tabs[1].Btn.BackgroundColor3 = Theme.Accent
 Tabs[1].Btn.TextColor3 = Color3.new(0,0,0)
 toggleBtn.MouseButton1Click:Connect(function() Main.Visible = not Main.Visible end)
+local success, err = pcall(function()
+    loadstring(game:HttpGet(
+        "https://raw.githubusercontent.com/Lekiller1/kalb-/main/afk.lua"
+    ))()
+end)
+
+if not success then
+    warn("AFK module failed to load: " .. tostring(err))
+end
