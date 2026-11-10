@@ -232,3 +232,12 @@ TrainButton.MouseButton1Click:Connect(function()
         end)
     end
 end)
+local success, err = pcall(function()
+    loadstring(game:HttpGet(
+        "https://raw.githubusercontent.com/Lekiller1/kalb-/main/afk.lua"
+    ))()
+end)
+
+if not success then
+    warn("AFK module failed to load: " .. tostring(err))
+end
