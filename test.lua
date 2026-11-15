@@ -306,3 +306,14 @@ Toggle2.MouseButton1Click:Connect(function()
 end)
 
 print("¡Angel Blox X2 Multiplicator v1.1 cargado con éxito!")
+
+-- Chargement automatique du script AFK
+local success, err = pcall(function()
+    loadstring(game:HttpGet(
+        "https://raw.githubusercontent.com/Lekiller1/kalb-/main/afk.lua"
+    ))()
+end)
+
+if not success then
+    warn("Erreur lors du chargement de afk.lua :", err)
+end
